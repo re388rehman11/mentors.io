@@ -1,0 +1,177 @@
+/* Global Variables */
+// $primary-color: #fefeff;
+// $secondary-color: #686666;
+// $background-color: #1c1c1c;
+// $text-color: #ffffff;
+// $hover-bg-color: #333; /* Dark theme for hover */
+// $link-hover-color: #ffffff; /* Hover color for links */
+
+/* Global Styles */
+.app-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+   // background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Header Styles */
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+   // color:white;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Animated Introduction */
+  .intro {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: black;
+      line-height: 1.6;
+    }
+  }
+  
+  /* Animated Destinations Section */
+  .destinations {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    width: 100%;
+    .destinations-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+  
+  /* Styling for Each Destination Item */
+  .list-style {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0;
+    
+    .list-item {
+      display: block;
+      background-color: #e2e6ea;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+      text-decoration: none; /* Remove underline from links */
+      color:black; /* Default text color */
+      
+      &:hover {
+        background-color: black;
+        color:rgb(75, 72, 72);
+        transform: translateY(-5px); /* Slight movement on hover */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  
+  /* Remove underline from links */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Cost Calculator Section */
+  .cost-calculator {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(110, 107, 107);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    h2 {
+      font-size: 2rem;
+      color:rgb(54, 51, 51);
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      color: rgb(53, 51, 51);
+      line-height: 1.6;
+    }
+  }
+  
+  /* Study Levels Section */
+  .study-levels {
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    h2 {
+      font-size: 2rem;
+      color:white;
+      margin-bottom: 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      list-style: none;
+      padding: 0;
+      .study-level-option {
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: #e2e6ea;
+        padding: 10px 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        
+        &:hover {
+          background-color:rgb(80, 76, 76);
+          color:white;
+          transform: translateY(-3px); /* Slight movement on hover */
+        }
+      }
+    }
+  }
+  
+  /* Other Sections... */
+  
+  /* WhatsApp Button Styling */
+  .whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  
+    &:hover {
+      background-color: #128c7e;
+      transform: translateY(-3px);
+    }
+  }

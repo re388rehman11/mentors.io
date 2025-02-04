@@ -1,0 +1,541 @@
+// Optional Bootstrap Import
+@import "bootstrap";
+
+
+.container {
+  padding: 15px;
+}
+
+/* Ensure card images stay responsive */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* Make sure the columns adjust for smaller screens */
+@media (max-width: 767px) {
+  .card {
+    margin-bottom: 20px; /* Add space between cards on small screens */
+  }
+
+  .blockquote {
+    font-size: 1.1rem;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+}
+
+
+/* Header.scss */
+
+/* Base styling for header */
+.header {
+  background-color: #007bff; /* Primary blue color */
+  color: white;
+}
+
+/* Logo styling */
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for nav items */
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #f8f9fa; /* Light hover effect */
+  text-decoration: underline;
+}
+
+/* Call-to-action button styling */
+.cta .btn {
+  background-color: #f8f9fa;
+  color: #0e0f10;
+  font-weight: 600;
+}
+
+.cta .btn:hover {
+  background-color: #e2e6ea;
+  color: #090a0b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+  }
+
+  .nav {
+    flex-direction: column; /* Stack nav items vertically on mobile */
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .cta {
+    margin-top: 15px;
+  }
+}
+
+
+/* Styling for the homepage */
+.homepage {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section .overlay {
+  z-index: 1; /* Ensure it sits below the content */
+}
+
+.hero-section .container {
+  z-index: 2; /* Content above overlay */
+  position: relative;
+}
+
+
+
+
+
+.inquiry-form {
+  position: relative;
+  color: #fff;
+
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8); // Light transparent background
+    color: #000;
+  }
+
+  .form-control::placeholder {
+    color: #666;
+  }
+
+  button {
+    background-color: #007bff;
+    border: none;
+  }
+}
+
+
+/* Add this CSS to your stylesheet */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);  /* Moves the card up */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Adds shadow effect */
+}
+
+.service-box {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+
+
+
+/* Optional CSS for the offer cards */
+.offer-card {
+  background-color: #333;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox-group {
+  margin-top: 20px;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.contact-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-image {
+    display: none;
+  }
+}
+
+
+
+
+
+
+/* Add the following to your CSS file */
+
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+
+
+
+
+body {
+  padding-top: 70px; /* Adjust based on the height of the navbar */
+}
+
+
+
+
+// .navbar {
+//   background-color: white !important; /* Ensure white background */
+// }
+
+// .nav-link-custom {
+//   color: black !important; /* Make the links black */
+//   font-weight: 500; /* Add slight boldness for better readability */
+//   transition: all 0.3s ease-in-out; /* Smooth hover effect */
+// }
+
+// .nav-link-custom:hover {
+//   color: black; /* Maintain black color on hover */
+//   text-decoration: none; /* Remove underline on hover */
+//   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+//   border-radius: 5px; /* Rounded effect for shadow */
+//   padding: 5px 10px; /* Add some padding for better hover aesthetics */
+// }
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+// /* Styling for navbar links */
+// .navbar-nav .nav-link {
+//   position: relative; /* Required for box-shadow effect */
+//   padding-bottom: 5px; /* Keeps space for shadow effect */
+//   transition: all 0.3s ease-in-out; /* Smooth transition */
+// }
+
+// /* Hover effect with shadow */
+// .navbar-nav .nav-link:hover {
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); /* Apply shadow on hover */
+//   color: #f0ad4e; /* Optionally change text color on hover */
+// }
+
+
+
+
+
+
+
+/* Make sure to add padding or margin to the top of your content */
+body {
+  margin: 0;
+  padding-top: 90px; /* Height of the fixed navbar */
+}
+
+/* Make sure the main content has enough room to scroll */
+.main-content {
+  overflow: auto;
+  min-height: 100vh; /* Ensures content is scrollable */
+}
+
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+.why-choose-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181818;
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.why-choose-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.why-choose-image {
+  flex: 1;
+  text-align: right;
+}
+
+.why-choose-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .why-choose-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-choose-content {
+    padding-right: 0;
+  }
+
+  .why-choose-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+.how-we-work {
+  background-color: #f9f9f9; /* Background color */
+  padding: 40px 20px;
+}
+
+.how-we-work h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.how-we-work h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.how-we-work p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.step {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  background-color: #031324; /* Icon background color */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.step h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.global-stats {
+  background-color: #f4f4f4; /* You can change the background color */
+  padding: 40px 0;
+}
+
+.title {
+  margin-bottom: 30px; /* Space between the title and stats */
+}
+
+.title h3 {
+  font-size: 2rem; /* Adjust the font size of the title */
+  font-weight: bold;
+  color: #333; /* Text color for the title */
+}
+
+.stat-item {
+  padding: 20px;
+}
+
+.stat-item h2 {
+  font-size: 3rem; /* Adjust the size as needed */
+  font-weight: bold;
+  color: #333; /* Change the text color */
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #666; /* Subtle color for the subtext */
+}
+
+@media (max-width: 768px) {
+  .stat-item {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+.introduction {
+  background-color: #f9f9f9; // Light gray background
+}
+
+.introduction img {
+  border-radius: 10px; // Rounded corners for the image
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Soft shadow for the image
+}
+
+.introduction h2 {
+  color: #2c3e50; // Dark text color for the heading
+}
+
+.introduction .stats {
+  font-size: 18px; // Increase font size for stats
+}
+
+.introduction .stats p {
+  margin: 0; // Remove extra margin
+}
+
+.introduction .text-muted {
+  color: #7f8c8d; // Muted text for better readability
+}

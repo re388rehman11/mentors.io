@@ -1,0 +1,330 @@
+// /* Navbar base styles */
+// .navbar {
+//     background-color: #333;
+//     transition: background-color 0.3s ease;
+//   }
+  
+//   .navbar-toggler-icon {
+//     background-color: #fff;
+//   }
+  
+//   /* Styling for nav-link */
+//   .nav-link {
+//     color: #222 !important; /* Dark black color for the link */
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     position: relative;
+//     padding: 15px 20px;
+//     display: inline-block;
+//     transition: color 0.3s ease;
+//   }
+  
+//   /* Underline animation effect */
+//   .nav-link::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 0;
+//     height: 2px;
+//     background-color: #00bcd4; /* Underline color */
+//     transition: width 0.3s ease;
+//   }
+  
+//   /* Hover and focus states for nav-link */
+//   .nav-link:hover,
+//   .nav-link:focus {
+//     color: #555 !important; /* Light black color on hover */
+//   }
+  
+//   .nav-link:hover::after,
+//   .nav-link:focus::after {
+//     width: 100%; /* Animate the underline to full width */
+//   }
+  
+//   /* Dropdown styles */
+//   .nav-item.dropdown .dropdown-menu {
+//     border-radius: 0;
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+//   }
+  
+//   .nav-item.dropdown:hover .dropdown-menu {
+//     opacity: 1;
+//   }
+  
+//   .dropdown-item {
+//     padding: 10px 20px;
+//     color: #333 !important;
+//     transition: background-color 0.3s ease;
+//   }
+  
+//   .dropdown-item:hover {
+//     background-color: #f0f0f0;
+//     color: #333 !important;
+//   }
+  
+//   /* Responsive styling */
+//   @media (max-width: 991px) {
+//     .navbar-collapse {
+//       text-align: center;
+//     }
+  
+//     .navbar-nav {
+//       padding-top: 20px;
+//     }
+  
+//     .navbar-nav .nav-item {
+//       margin: 10px 0;
+//     }
+//   }
+  
+//   /* Active navbar item */
+//   .nav-link.active {
+//     color: #00bcd4 !important;
+//   }
+  
+//   /* Toggle button animation */
+//   .navbar-toggler {
+//     border: none;
+//   }
+  
+//   .navbar-toggler:focus {
+//     outline: none;
+//   }
+  
+
+
+
+// /* Navbar base styles */
+// .navbar {
+//     background-color: #333;
+//     transition: background-color 0.3s ease;
+//   }
+  
+//   .navbar-toggler-icon {
+//     background-color: #fff;
+//   }
+  
+//   /* Styling for nav-link */
+//   .nav-link {
+//     color: #222 !important; /* Dark black color for the link */
+//     font-weight: 500;
+//     text-transform: uppercase;
+//     position: relative;
+//     padding: 15px 20px;
+//     display: inline-block;
+//     text-decoration: none; /* Remove default underline */
+//     transition: color 0.3s ease;
+//   }
+  
+//   /* Remove the underline from links on hover/focus */
+//   .nav-link:hover,
+//   .nav-link:focus {
+//     color: #555 !important; /* Light black color on hover */
+//     text-decoration: none; /* Ensure no default underline on hover */
+//   }
+  
+//   /* Underline animation effect */
+//   .nav-link::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 0;
+//     height: 2px;
+//     background-color: #00bcd4; /* Underline color */
+//     transition: width 0.3s ease;
+//   }
+  
+//   /* Animate the underline on hover/focus */
+//   .nav-link:hover::after,
+//   .nav-link:focus::after {
+//     width: 100%; /* Animate the underline to full width */
+//   }
+  
+//   /* Dropdown styles */
+//   .nav-item.dropdown .dropdown-menu {
+//     border-radius: 0;
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+//     opacity: 0;
+//     transition: opacity 0.3s ease-in-out;
+//   }
+  
+//   .nav-item.dropdown:hover .dropdown-menu {
+//     opacity: 1;
+//   }
+  
+//   .dropdown-item {
+//     padding: 10px 20px;
+//     color: #333 !important;
+//     transition: background-color 0.3s ease;
+//   }
+  
+//   .dropdown-item:hover {
+//     background-color: #f0f0f0;
+//     color: #333 !important;
+//   }
+  
+//   /* Responsive styling */
+//   @media (max-width: 991px) {
+//     .navbar-collapse {
+//       text-align: center;
+//     }
+  
+//     .navbar-nav {
+//       padding-top: 20px;
+//     }
+  
+//     .navbar-nav .nav-item {
+//       margin: 10px 0;
+//     }
+//   }
+  
+//   /* Active navbar item */
+//   .nav-link.active {
+//     color: #00bcd4 !important;
+//   }
+  
+//   /* Toggle button animation */
+//   .navbar-toggler {
+//     border: none;
+//   }
+  
+//   .navbar-toggler:focus {
+//     outline: none;
+//   }
+  
+
+/* Navbar base styles */
+.navbar {
+    background: linear-gradient(45deg, #ffffff, #f2f2f2); /* White gradient background */
+    background-size: 400% 400%; /* Gradient size */
+    animation: backgroundAnimation 6s ease infinite; /* Smooth background animation */
+    transition: background-color 0.3s ease;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% {
+      background-position: 100% 0;
+    }
+    50% {
+      background-position: 0 100%;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  
+  /* Styling for nav-link (regular links without dropdown) */
+  .nav-link {
+    color: #000 !important; /* Black text */
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    //padding: 18px 20px;
+    display: inline-block;
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    font-size: 1.1rem; /* Slightly larger text */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Shiny effect */
+  }
+  
+  /* Remove the underline from links on hover/focus */
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #333 !important; /* Darker black on hover */
+    text-decoration: none; /* No underline */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Stronger shiny effect */
+  }
+  
+  /* Underline animation effect for regular links */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:3px; /* Keep the gap between text and underline */
+    width: 0;
+    height: 3px;
+    background-color: #434343; /* Underline color */
+    transition: width 0.3s ease;
+  }
+  
+  /* Animate the underline on hover/focus for regular links */
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    width: 100%; /* Animate the underline to full width */
+  }
+  
+  /* Styling for dropdown links (Countries) */
+  .nav-item.dropdown .nav-link {
+    text-decoration: none; /* Ensure no underline for dropdown toggle link */
+  }
+  
+  /* Remove the hover underline effect for the dropdown toggle link */
+  .nav-item.dropdown .nav-link:hover,
+  .nav-item.dropdown .nav-link:focus {
+    text-decoration: none; /* No underline on hover for dropdown link */
+    color: #000; /* Ensure text color remains black */
+  }
+  
+  /* Remove the dot under the countries dropdown link */
+  .nav-item.dropdown .nav-link::after {
+    content: none; /* Remove the dot */
+  }
+  
+  /* Dropdown menu styles */
+  .nav-item.dropdown .dropdown-menu {
+    border-radius: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    color: #333 !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-item:hover {
+    background-color: #f2f2f2;
+    color: #000 !important;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      padding-top: 20px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Active navbar item */
+  .nav-link.active {
+    color: #1f1f1f !important;
+  }
+  
+  /* Toggle button animation */
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    outline: none;
+  }
+ 

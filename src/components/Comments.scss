@@ -1,0 +1,959 @@
+// .work-page {
+//     text-align: center;
+//     font-family: Arial, sans-serif;
+//     background: #f9f9f9;
+//     padding: 20px;
+  
+//     .work-title {
+//       font-size: 2.5rem;
+//       margin-bottom: 1.5rem;
+//       color: #333;
+//       font-weight: bold;
+//     }
+  
+//   //   // .work-container {
+//   //   //   position: relative;
+//   //   //   height: auto;
+//   //   //   display: flex;
+//   //   //   justify-content: space-between;
+//   //   //   align-items: flex-start;
+//   //   //   flex-wrap: wrap;
+//   //   //   margin-top: 20px;
+  
+//   //   //   .comment-box {
+//   //   //     position: relative;
+//   //   //     width: 30%; /* Three comments in a row by default */
+//   //   //     min-height: 150px;
+//   //   //     padding: 15px;
+//   //   //     background: #fff;
+//   //   //     border: 3px solid #f0f0f0;
+//   //   //     border-radius: 15px;
+//   //   //     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+//   //   //     text-align: center;
+//   //   //     opacity: 0;
+//   //   //     transform: scale(0.8);
+//   //   //     transition: opacity 1s ease, transform 1s ease;
+  
+//   //   //     &.fade-in {
+//   //   //       opacity: 1;
+//   //   //       transform: scale(1);
+//   //   //     }
+  
+//   //   //     &.fade-out {
+//   //   //       opacity: 0;
+//   //   //       transform: scale(0.8);
+//   //   //     }
+  
+//   //   //     .profile {
+//   //   //       display: flex;
+//   //   //       flex-direction: column;
+//   //   //       align-items: center;
+//   //   //       margin-bottom: 15px;
+  
+//   //   //       .profile-pic {
+//   //   //         width: 60px;
+//   //   //         height: 60px;
+//   //   //         border-radius: 50%;
+//   //   //         margin-bottom: 10px;
+//   //   //         border: 3px solid #ddd;
+//   //   //       }
+  
+//   //   //       .name {
+//   //   //         font-size: 1.3rem;
+//   //   //         font-weight: bold;
+//   //   //         color: #555;
+//   //   //       }
+//   //   //     }
+  
+//   //       .comment {
+//   //         font-size: 1rem;
+//   //         margin-bottom: 10px;
+//   //         color: #444;
+//   //         font-style: italic;
+//   //         min-height: 40px;
+//   //       }
+  
+//   //       .stars {
+//   //         display: flex;
+//   //         justify-content: center;
+//   //         align-items: center;
+//   //         gap: 5px;
+//   //       }
+  
+//   //       .star {
+//   //         font-size: 20px;
+//   //         color: #ccc;
+//   //         transition: color 0.3s ease, transform 0.3s ease;
+//   //       }
+  
+//   //       .star.filled {
+//   //         color: #ecc906;
+//   //         transform: scale(1.2);
+//   //       }
+  
+//   //       .star:hover {
+//   //         color: #ffa500;
+//   //         transform: scale(1.3);
+//   //       }
+//   //     }
+//   //   }
+//   // }
+//   }
+
+
+
+
+
+
+//   .work-container {
+//     display: flex;
+//     overflow: hidden;
+//     width: 100%;
+//     position: relative;
+//   }
+  
+//   .comment-slider {
+//     display: flex;
+//     transition: transform 0.5s ease-in-out;
+//   }
+  
+//   .comment-box {
+//     flex: 0 0 100%; /* Each comment takes full width initially */
+//     transition: transform 0.5s ease-in-out;
+//     margin-right: 20px;
+//   }
+  
+
+
+//   .work-container {
+//     display: flex;
+//     overflow: hidden;
+//     width: 100%;
+//     position: relative;
+//   }
+  
+//   .comment-slider {
+//     display: flex;
+//     transition: transform 0.5s ease-in-out;
+//   }
+  
+//   .comment-box {
+//     flex: 0 0 100%; /* Each comment takes full width initially */
+//     transition: transform 0.5s ease-in-out;
+//     margin-right: 20px;
+//   }
+  
+
+
+
+
+  
+//   @media (max-width: 768px) {
+//     .work-page {
+//       padding: 15px;
+//     }
+  
+//     .work-title {
+//       font-size: 2rem;
+//       margin-bottom: 1rem;
+//     }
+  
+//     .work-container {
+//       height: auto;
+//       flex-direction: row;
+//       justify-content: space-evenly;
+//       align-items: flex-start;
+//       margin-top: 20px;
+//     }
+  
+//     .comment-box {
+//       width: 45%; /* Adjust width to fit 2 comments */
+//       margin: 10px;
+//       padding: 10px;
+//       font-size: 0.9rem;
+//     }
+  
+//     .comment-1,
+//     .comment-2,
+//     .comment-3 {
+//       left: auto;
+//       position: relative;
+//     }
+//   }
+  
+//   @media (max-width: 480px) {
+//     .work-page {
+//       padding: 10px;
+//     }
+  
+//     .work-title {
+//       font-size: 1.8rem;
+//       margin-bottom: 0.8rem;
+//     }
+  
+//     .work-container {
+//       height: auto;
+//       flex-direction: column; /* Stack comments vertically */
+//       justify-content: center;
+//       align-items: center;
+//     }
+  
+//     .comment-box {
+//       width: 100%; /* Make comment boxes full width */
+//       padding: 10px;
+//       font-size: 0.85rem;
+//       margin-bottom: 20px; /* Space between stacked comments */
+//     }
+//   }
+  
+//   @media (max-width: 320px) {
+//     .work-page {
+//       padding: 8px;
+//     }
+  
+//     .work-title {
+//       font-size: 1.6rem;
+//       margin-bottom: 0.5rem;
+//     }
+  
+//     .work-container {
+//       height: auto;
+//       flex-direction: column; /* Stack comments vertically */
+//       justify-content: center;
+//       align-items: center;
+//     }
+  
+//     .comment-box {
+//       width: 100%; /* Full width comment box */
+//       padding: 8px;
+//       font-size: 0.75rem;
+//       margin-bottom: 15px;
+//     }
+//   }
+//   //
+  
+  
+//   @media (max-width: 768px) {
+//     .work-container {
+//       flex-direction: column; /* Stack comments vertically on small screens */
+//       align-items: center;
+//     }
+  
+//     .comment-box {
+//       width: 90%; /* Make comment box wider */
+//       margin: 10px 0;
+//     }
+//   }
+  
+//   /* For large screens */
+//   @media (min-width: 769px) {
+//     .work-container {
+//       display: flex;
+//       justify-content: space-between;
+//       flex-wrap: wrap;
+//     }
+  
+//     .comment-box {
+//       width: 30%; /* Show 3 comments side by side */
+//       margin: 10px;
+//     }
+//   }
+  
+//   /* For mobile and small screens */
+//   @media (max-width: 768px) {
+//     .work-container {
+//       display: block; /* Stack comments vertically on small screens */
+//       text-align: center;
+//     }
+  
+//     .comment-box {
+//       width: 100%; /* Full width for mobile */
+//       margin: 10px 0;
+//     }
+  
+//     .profile-pic {
+//       width: 80px; /* Optional: reduce image size on mobile */
+//       height: 80px;
+//     }
+//   }
+  
+  
+//   //
+//   /* For large screens */
+//   @media (min-width: 769px) {
+//     .work-container {
+//       display: flex;
+//       justify-content: space-between;
+//       flex-wrap: wrap;
+//     }
+  
+//     .comment-box {
+//       width: 30%; /* Show 3 comments side by side */
+//       margin: 10px;
+//     }
+//   }
+  
+//   /* For mobile and small screens */
+//   @media (max-width: 768px) {
+//     .work-container {
+//       display: block; /* Stack comments vertically on small screens */
+//       text-align: center;
+//     }
+  
+//     .comment-box {
+//       width: 100%; /* Full width for mobile */
+//       margin: 10px 0;
+//     }
+  
+//     .profile-pic {
+//       width: 80px; /* Optional: reduce image size on mobile */
+//       height: 80px;
+//     }
+//   }
+  
+  
+  
+  
+//   ///
+//   /* For large screens */
+//   @media (min-width: 769px) {
+//     .work-container {
+//       display: flex;
+//       justify-content: space-between;
+//       flex-wrap: wrap;
+//     }
+  
+//     .comment-box {
+//       width: 30%; /* Show 3 comments side by side */
+//       margin: 10px;
+//     }
+//   }
+  
+//   /* For mobile and small screens */
+//   @media (max-width: 768px) {
+//     .work-container {
+//       display: block; /* Stack comments vertically on small screens */
+//       text-align: center;
+//     }
+  
+//     .comment-box {
+//       width: 100%; /* Full width for mobile */
+//       margin: 10px 0;
+//     }
+  
+//     .profile-pic {
+//       width: 80px; /* Optional: reduce image size on mobile */
+//       height: 80px;
+//     }
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   /* Intro Section */
+// .intro-section {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 40px;
+//   background-color: #f9f9f9; /* Light background for a clean look */
+//   border-radius: 10px; /* Smooth corners */
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a floating effect */
+// }
+
+// .intro-section .intro-text {
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding-right: 30px; /* Space between text and video */
+// }
+
+// .intro-section .intro-video {
+//   flex: 1;
+//   text-align: center;
+// }
+
+// .intro-section h1 {
+//   font-size: 2.5rem;
+//   font-weight: bold;
+//   color: #333;
+//   margin-bottom: 20px;
+//   text-align: left; /* Heading aligned to the left */
+// }
+
+// .intro-section p {
+//   font-size: 1.125rem;
+//   color: #555;
+//   line-height: 1.6;
+//   text-align: left;
+// }
+
+// .video-container {
+//   position: relative;
+//   height: 360px;
+//   width: 100%; /* Ensuring video takes full width */
+//   overflow: hidden;
+//   border-radius: 12px;
+// }
+
+
+// /* Feature Cards */
+// .feature-cards {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 40px;
+//   gap: 20px;
+// }
+
+// .feature-card {
+//   flex: 1;
+//   background-color: #f1f1f1;
+//   padding: 20px;
+//   border-radius: 10px;
+//   text-align: center;
+// }
+
+// .feature-card h3 {
+//   font-size: 1.5rem;
+//   margin-bottom: 15px;
+// }
+
+// .feature-card a {
+//   display: block;
+//   margin-top: 15px;
+//   color: #002366;
+//   text-decoration: none;
+// }
+
+// /* Articles & News Section */
+// .articles-news {
+//   padding: 40px;
+// }
+
+// .articles-news h2 {
+//   font-size: 2rem;
+//   margin-bottom: 20px;
+// }
+
+// .news-item {
+//   margin-bottom: 20px;
+// }
+
+// .news-item h3 {
+//   font-size: 1.5rem;
+//   margin-bottom: 5px;
+// }
+
+// /* FAQ Section */
+// .faq-section {
+//   padding: 40px;
+// }
+
+// .faq-section h2 {
+//   font-size: 2rem;
+//   margin-bottom: 20px;
+// }
+
+// .faq-item {
+//   margin-bottom: 20px;
+// }
+
+// .faq-item h4 {
+//   font-size: 1.5rem;
+//   margin-bottom: 10px;
+// }
+
+// .faq-item p {
+//   font-size: 1rem;
+// }
+
+// /* Responsive */
+// @media (max-width: 768px) {
+//   .intro-section {
+//     flex-direction: column;
+//     text-align: center;
+//   }
+
+//   .feature-cards {
+//     flex-direction: column;
+//   }
+
+//   .feature-card {
+//     margin-bottom: 20px;
+//   }
+// }
+
+// .why-study-abroad {
+//   width: 100%; /* Full width for all sections */
+//   margin: 0 auto;
+
+//   .feature-cards {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 20px;
+//     padding: 0 10px; /* Add some padding for responsiveness */
+//   }
+
+//   .feature-card {
+//     background-color: #f1f1f1;
+//     padding: 20px;
+//     border-radius: 10px;
+//     cursor: pointer;
+//     width: 100%; /* Make it full width */
+//     transition: transform 0.3s ease;
+
+//     &:hover {
+//       transform: scale(1.05); /* Subtle hover effect */
+//     }
+//   }
+
+//   .feature-card h3,
+//   .faq-section h4 {
+//     font-size: 1.5rem;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     margin-bottom: 15px;
+//   }
+
+//   .feature-card h3 span,
+//   .faq-section h4 span {
+//     font-size: 1.5rem;
+//     cursor: pointer;
+//   }
+
+//   .feature-card p,
+//   .faq-item p {
+//     font-size: 1.125rem;
+//     margin-top: 10px;
+//     line-height: 1.6;
+//   }
+
+//   .intro-video {
+//     margin-top: 20px;
+//     .video-container {
+//       position: relative;
+//       width: 100%;
+//       height: 300px;
+//     }
+//   }
+
+//   .articles-news,
+//   .faq-section {
+//     margin-top: 30px;
+//   }
+
+//   .articles-news h2 {
+//     font-size: 2rem;
+//     margin-bottom: 20px;
+//   }
+
+//   .news-item h3 {
+//     font-size: 1.25rem;
+//   }
+
+//   .news-item p {
+//     font-size: 1rem;
+//   }
+
+//   @media (max-width: 768px) {
+//     .feature-cards {
+//       padding: 10px;
+//     }
+//   }
+// }
+
+// video {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+
+
+
+
+
+
+// .hero-section {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: white;
+//   padding: 40px 80px; // Adjusted padding for better spacing
+//   min-height: 300px; // Adjusted height to make it smaller
+//   width: 100%;
+//   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+//   .hero-content {
+//     max-width: 50%;
+//     h1 {
+//       font-size: 2.5rem;
+//       font-weight: bold;
+//       color: #333;
+//     }
+//     p {
+//       font-size: 1.2rem;
+//       color: #666;
+//     }
+//   }
+
+//   .hero-image {
+//     max-width: 30%;
+//     img {
+//       width: 100%;
+//       height: auto;
+//     }
+//   }
+// }
+
+// // Responsive adjustments
+// @media (max-width: 1024px) {
+//   .hero-section {
+//     flex-direction: column;
+//     text-align: center;
+//     padding: 30px;
+//   }
+
+//   .hero-content {
+//     max-width: 80%;
+//   }
+
+//   .hero-image {
+//     max-width: 60%;
+//     margin-top: 20px;
+//   }
+// }
+
+
+
+
+
+
+
+
+// .work-page {
+//   text-align: center;
+//   padding: 20px;
+// }
+
+// .work-title {
+//   font-size: 24px;
+//   margin-bottom: 20px;
+// }
+
+// .slider-container {
+//   max-width: 80%;
+//   margin: 0 auto;
+// }
+
+// .comment-card {
+//   background: #fff;
+//   border-radius: 10px;
+//   padding: 20px;
+//   text-align: center;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+// }
+
+// .profile {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .profile-pic {
+//   width: 80px;
+//   height: 80px;
+//   border-radius: 50%;
+//   object-fit: cover;
+//   margin-bottom: 10px;
+// }
+
+// .name {
+//   font-size: 18px;
+//   font-weight: bold;
+// }
+
+// .comment {
+//   font-size: 16px;
+//   color: #555;
+//   margin-top: 10px;
+// }
+
+// .stars {
+//   margin-top: 10px;
+// }
+
+// .star {
+//   color: #ddd;
+//   font-size: 20px;
+// }
+
+// .star.filled {
+//   color: gold;
+// }
+
+
+
+
+
+
+
+
+
+
+// .work-page {
+//   text-align: center;
+//   padding: 20px;
+// }
+
+// .work-title {
+//   font-size: 24px;
+//   margin-bottom: 20px;
+// }
+
+// .slider-container {
+//   max-width: 80%;
+//   margin: 0 auto;
+//   display: flex;
+//   flex-wrap: wrap; // Ensures cards wrap on smaller screens
+//   justify-content: center;
+//   gap: 20px; // Added spacing between cards
+// }
+
+// .comment-card {
+//   background: #fff;
+//   border-radius: 10px;
+//   padding: 20px;
+//   text-align: center;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+//   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+//   width: 30%; // Makes sure three cards fit in a row
+//   min-width: 250px; // Ensures a minimum size for better layout
+//   margin: 10px; // Adds spacing between cards
+
+//   &:hover {
+//     transform: scale(1.05);
+//     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+//   }
+// }
+
+// .profile {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .profile-pic {
+//   width: 80px;
+//   height: 80px;
+//   border-radius: 50%;
+//   object-fit: cover;
+//   margin-bottom: 10px;
+//   transition: transform 0.3s ease-in-out;
+
+//   &:hover {
+//     transform: scale(1.1);
+//   }
+// }
+
+// .name {
+//   font-size: 18px;
+//   font-weight: bold;
+// }
+
+// .comment {
+//   font-size: 16px;
+//   color: #555;
+//   margin-top: 10px;
+// }
+
+// .stars {
+//   margin-top: 10px;
+// }
+
+// .star {
+//   color: #ddd;
+//   font-size: 20px;
+//   transition: transform 0.2s ease-in-out;
+
+//   &.filled {
+//     color: gold;
+//   }
+
+//   &:hover {
+//     transform: scale(1.2);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+.work-page {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.work-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slider-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px; // Increased spacing between cards
+}
+
+.comment-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  width: 25%;  // Reduced width for more space between cards
+  min-width: 220px;
+  max-width: 300px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.7s ease-in-out forwards;
+
+  &:hover {
+    transform: scale(1.07);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+
+.comment {
+  font-size: 15px;
+  color: #555;
+  margin-top: 10px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.stars {
+  margin-top: 10px;
+}
+
+.star {
+  color: #ddd;
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &.filled {
+    color: gold;
+  }
+
+  &:hover {
+    transform: scale(1.3);
+    color: orange;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .slider-container {
+    gap: 30px; // More space between cards on medium screens
+  }
+
+  .comment-card {
+    width: 40%; // Slightly bigger for tablets
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 10px;
+  }
+
+  .comment-card {
+    width: 90%;  // One card per row
+    max-width: 350px;
+    scroll-snap-align: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
