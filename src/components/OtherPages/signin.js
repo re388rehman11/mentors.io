@@ -39,7 +39,7 @@ const PartnerRegistration = () => {
     });
 
     try {
-      await axios.post("http://localhost:5001/register", formDataWithFiles, {
+      await axios.post("http://localhost:5002/register", formDataWithFiles, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       toast.success("Registration successful!");
