@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
             <h5 className="text-uppercase">Abroad Mentors</h5>
             <p>
-              Study Mentor is your trusted partner for visa consultancy, helping
+               Mentors is your trusted partner for visa consultancy, helping
               students achieve their dreams of studying abroad. Follow us on
               social media to stay updated on the latest opportunities and
               updates.
@@ -24,7 +24,7 @@ export default function Footer() {
               <strong>Address:</strong> D-ground, Faisalabad, Pakistan
             </p>
             <p>
-              <strong>Phone:</strong> +923136928882
+              <strong>Phone:</strong> +923433350139
             </p>
             <p>
               <strong>Email:</strong> abroadmentors.pk@gmail.com
@@ -81,7 +81,7 @@ export default function Footer() {
       </div>
 
       <div className="text-center p-3 bg-dark">
-        © {new Date().getFullYear()} Study Mentor. All Rights Reserved.
+        © {new Date().getFullYear()} Abroad Mentors. All Rights Reserved.
       </div>
     </footer>
   );

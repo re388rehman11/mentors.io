@@ -52,12 +52,9 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">The High-Quality Education System in the United Kingdom</h5>  
+<p className="text-muted mb-4">Discover why the UK is renowned for its world-class education, prestigious universities, and exceptional learning opportunities.</p>
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>
@@ -104,12 +101,9 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">IELTS Requirements for Studying in the United Kingdom</h5>  
+<p className="text-muted mb-4">Understand the IELTS score requirements for UK universities and tips to achieve your target band for admission.</p>
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>
@@ -129,12 +123,9 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">Starting a Business in the United Kingdom as an International Student</h5>  
+<p className="text-muted mb-4">Learn about visa options, legal requirements, and key steps for international students to start and run a business in the UK.</p>
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>
@@ -159,12 +150,9 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">UK’s Friendly Policies for Pakistani Students</h5>  
+<p className="text-muted mb-4">Explore visa options, scholarships, and support programs that make studying in the UK more accessible for Pakistani students.</p>
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>
@@ -183,12 +171,10 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">Building a Bright Future in the United States</h5>  
+<p className="text-muted mb-4">Discover career opportunities, education pathways, and essential tips for achieving success and long-term growth in the USA.</p>
+
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>
@@ -217,12 +203,9 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">Visa Process for Studying in the United States</h5>  
+<p className="text-muted mb-4">Get a step-by-step guide on U.S. student visa requirements, application procedures, and essential tips for a smooth process.</p>
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>
@@ -243,12 +226,9 @@ export default function App() {
           className="img-fluid"
         />
         <MDBCardBody className="d-flex flex-column">
-          <h5 className="mb-2">
-            How to Study in the United Kingdom: Tips from Filipino Students
-          </h5>
-          <p className="text-muted mb-4">
-            Learn practical advice from students studying in the UK to make your transition smoother.
-          </p>
+        <h5 className="mb-2">Part-Time Job Opportunities for Students in the USA</h5>  
+<p className="text-muted mb-4">Learn about work regulations, job options, and tips for balancing studies while working part-time in the United States.</p>
+
           <div className="mt-auto text-muted d-flex justify-content-between align-items-center">
             <small>June 19, 2024</small>
             <small>5 min read</small>

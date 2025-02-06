@@ -1,4 +1,4 @@
-import img from '../assets/ceo.jpg'
+import img from '../assets/de.avif'
 import React from 'react';
 import {
   MDBContainer,

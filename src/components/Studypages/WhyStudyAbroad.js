@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '../assets/HeroImage.jpg'
+import bgImage from '../assets/bg.webp'
 
 export default function WhyStudyAbroad() {
   return (
@@ -26,7 +26,12 @@ export default function WhyStudyAbroad() {
           }}
         ></div>
 
-        <div className="container position-relative"> {/* ✅ Ensure content is above the overlay */}
+        <div className="container position-relative"
+        style={{
+        
+          marginTop:'10vh'
+        }}>
+        {/* ✅ Ensure content is above the overlay */}
           <h1 className="display-4 fw-bold">About Abroad Mentors</h1>
           <p className="lead">Your Trusted Partner for Study Abroad Opportunities</p>
         </div>

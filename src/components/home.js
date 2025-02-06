@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import paragraphImage from './assets/HomeImage/paragraph.jpg';
 import studyTourImage from './assets/HomeImage/background.jpg'; // Adjust the path
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 export default function Home() {
